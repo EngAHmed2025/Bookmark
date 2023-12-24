@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css/all.min.css">
+    <link rel="stylesheet" href="style.css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css/inf.css">
+</head>
+<body>
+    <header class="py-5  border shadow w-75  mx-auto my-4 bg-gradient rounded-4 ">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <h1 class="py-2 position-relative text-capitalize">Bookmarker</h1>
+        <div class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+            <h2 >
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+            </h2>
+            <div class="site-name w-100 d-flex flex-column justify-content-center">
+            <label for="bookmarkName" class="pb-2">
+                <i class="fa-solid fa-book-bookmark pe-2"></i>
+                Site Name</label>
+            <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+            </div>
+            <div class="site-url w-100 d-flex flex-column justify-content-center">
+            <label for="bookmarkURL" class="pb-2 fw-semibold">
+                <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+            <input type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+            </div>
+            <button class="btn btn-outline-dark px-5" onclick="addProduct()" id="btnvalid">Submit</button>
+        </div>
+        <table class="table mt-4 text-center">
+            <thead>
+            <tr><th class="text-capitalize">index</th>
+            <th class="text-capitalize">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+            </tr></thead>
+            <tbody id="tableContent"></tbody>
+        </table>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="style.css/bootstrap.bundle.js"></script>
+    <script src="style.css/main.js"></script>
+
+</body>
+</html>
